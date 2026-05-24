@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The Renov Team | Premium Roofing & Home Renovation
+    </title>
+    <meta
+      name="description"
+      content="The Renov Team specializes in high-end residential and commercial roofing, solar, and home renovation solutions. Quality craftsmanship, exceptional care, and fully warranted."
+    />
+
+    <!-- Direct High-Priority Local Font Preloads — Eliminates FOUT / Font Swapping completely -->
+    <link
+      rel="preload"
+      href="/fonts/space-grotesk-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/space-grotesk-latin-500-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/space-grotesk-latin-700-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+
+    <!-- Preload hero background image to prevent color flash on hard reload -->
+    <link
+      rel="preload"
+      href="/src/assets/bgimage.png"
+      as="image"
+      fetchpriority="high"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

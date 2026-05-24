@@ -1,0 +1,1093 @@
+{
+  "navbar": {
+    "services": [
+      {
+        "title": "SOLAR SERVICES",
+        "description": "Certified solar panel detach, reinstall, and troubleshooting for homeowners and contractors",
+        "icon": "Sun",
+        "items": [
+          "Solar Detach & Reinstall",
+          "Solar Racking",
+          "System Troubleshooting",
+          "Estimate Generation",
+          "Contractor Partnerships"
+        ],
+        "features": [
+          "5 Years of Expertise",
+          "Certified & Insured",
+          "Tailored for Roofing Contractors"
+        ]
+      },
+      {
+        "title": "FOR HOMEOWNERS",
+        "description": "Professional solar solutions to protect your investment during roofing projects",
+        "icon": "Home",
+        "items": [
+          "Solar Panel Removal",
+          "Solar Panel Reinstallation",
+          "Accurate Solar Estimates",
+          "System Assessments"
+        ],
+        "features": [
+          "Seamless Process",
+          "Protect Your Warranty",
+          "Quality & Efficiency"
+        ]
+      },
+      {
+        "title": "FOR CONTRACTORS",
+        "description": "Expand your services with a reliable solar partner for roofing and construction projects",
+        "icon": "Briefcase",
+        "items": [
+          "Solar Partnerships",
+          "Project Estimate Generation",
+          "Detach & Reinstall Crews",
+          "System Troubleshooting"
+        ],
+        "features": [
+          "Expand Revenue Streams",
+          "Certified Subcontractor",
+          "Fast & Reliable Service"
+        ]
+      }
+    ],
+    "companyLinks": [
+      {
+        "label": "Home",
+        "href": "#",
+        "icon": "Home"
+      },
+      {
+        "label": "Services",
+        "href": "#services",
+        "icon": "Tool"
+      },
+      {
+        "label": "About",
+        "href": "#about",
+        "icon": "Users"
+      },
+      {
+        "label": "Blog",
+        "href": "#blog",
+        "icon": "FileText"
+      },
+      {
+        "label": "Get Estimate",
+        "href": "#contact",
+        "icon": "Calculator"
+      }
+    ],
+    "stats": [
+      {
+        "value": "5+",
+        "label": "Years Expertise",
+        "icon": "Calendar"
+      },
+      {
+        "value": "Dallas",
+        "label": "Headquarters",
+        "icon": "MapPin"
+      },
+      {
+        "value": "Certified",
+        "label": "& Insured",
+        "icon": "Shield"
+      },
+      {
+        "value": "Free",
+        "label": "Estimates",
+        "icon": "MessageSquare"
+      }
+    ],
+    "cta": {
+      "title": "Get Your Free Solar Estimate",
+      "description": "Expert solar detach, reinstall, and estimate generation tailored for homeowners and roofing contractors.",
+      "buttonText": "Get an Estimate",
+      "buttonLink": "#contact"
+    }
+  },
+  "hero": {
+    "badge": "Renewable Modern Energy LLC",
+    "headlines": [
+      "Harness the Power",
+      "of Solar. Expert",
+      "Installations Await You."
+    ],
+    "description": "Specializing in solar panel installations for both roofing contractors and homeowners. With five years of expertise, we excel in 'Solar Detach & Reinstalls', providing certified and insured solutions. Our unique estimate generation feature is tailored for your specific needs.",
+    "buttons": [
+      {
+        "text": "Get an Estimate",
+        "href": "#contact",
+        "primary": true,
+        "icon": "FiArrowRight"
+      },
+      {
+        "text": "Learn More",
+        "href": "#about",
+        "primary": false,
+        "icon": "FiArrowRight"
+      }
+    ],
+    "stats": [
+      {
+        "value": "Dallas, TX",
+        "label": "Headquarters",
+        "icon": "FiMapPin"
+      },
+      {
+        "value": "5 Years",
+        "label": "Experience",
+        "icon": "RiBuildingLine"
+      },
+      {
+        "value": "Certified",
+        "label": "& Insured",
+        "icon": "FiShield"
+      },
+      {
+        "value": "Free",
+        "label": "Estimates",
+        "icon": "FiThumbsUp"
+      }
+    ]
+  },
+  "about": {
+    "badge": "5 Years of Expertise",
+    "headline": {
+      "prefix": "Welcome to",
+      "highlight": "Renewable Modern Energy",
+      "suffix": "LLC."
+    },
+    "description": "Based in <span class=\"font-semibold text-primary\">Dallas, Texas</span>, we specialize in solar panel installations for both roofing contractors and homeowners. We excel in 'Solar Detach & Reinstalls', providing certified and insured solutions. Our skilled crew is proficient in solar racking and troubleshooting systems, ensuring every project meets the highest standards of quality and efficiency.",
+    "image": {
+      "src": "SolarCrewAtWork",
+      "alt": "Renewable Modern Energy professional solar crew",
+      "badge": "Solar Detach & Reinstall Experts"
+    },
+    "stats": [
+      {
+        "value": 5,
+        "suffix": "+",
+        "label": "Years of Expertise"
+      },
+      {
+        "value": 100,
+        "suffix": "%",
+        "label": "Certified & Insured"
+      },
+      {
+        "value": 0,
+        "suffix": "",
+        "label": "Headaches"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "GET FREE ESTIMATE",
+        "href": "#contact",
+        "primary": true
+      },
+      {
+        "text": "OUR SERVICES",
+        "href": "#services",
+        "primary": false
+      }
+    ],
+    "trustBadges": {
+      "founded": "",
+      "headquarters": "Dallas, Texas 75234"
+    }
+  },
+  "aboutStory": {
+    "badge": "Our Mission",
+    "headline": {
+      "prefix": "Powering the Future",
+      "highlight": "Together",
+      "suffix": ""
+    },
+    "description": [
+      "Renewable Modern Energy LLC was founded with a singular focus: to bridge the gap between roofing and solar. We saw a need for a specialized, certified partner that roofing contractors could trust to handle the delicate process of solar detach and reinstalls.",
+      "With over five years of hands-on experience, our skilled crew has mastered solar racking, system troubleshooting, and efficient project execution. We ensure every panel is removed and reinstalled safely, protecting the homeowner's investment and warranty.",
+      "Our unique estimate generation feature sets us apart, providing accurate, transparent quotes for both homeowners and contractors. Whether you need a one-time detach or an ongoing partnership, we are committed to the highest standards of quality and efficiency."
+    ],
+    "image": {
+      "src": "SolarTechnician",
+      "alt": "Certified Solar Technician - Renewable Modern Energy",
+      "badge": "Certified & Insured Specialists"
+    },
+    "stats": [
+      {
+        "value": 5,
+        "suffix": "+",
+        "label": "Years Expertise"
+      },
+      {
+        "value": "Dallas",
+        "suffix": ", TX",
+        "label": "Service Area"
+      },
+      {
+        "value": "100%",
+        "suffix": "",
+        "label": "Satisfaction Focus"
+      }
+    ]
+  },
+  "services": {
+    "badge": "Our Services",
+    "headline": {
+      "prefix": "Specialized",
+      "highlight": "Solar Detach",
+      "suffix": "& Reinstall Solutions"
+    },
+    "description": [
+      "Renewable Modern Energy LLC is your go-to expert for solar panel detach and reinstall services. Whether you're a roofing contractor needing a reliable partner or a homeowner facing a roof repair, we ensure your solar system is handled with care.",
+      "Our transparent pricing and unique estimate generation feature make it easy to plan your project. Book our individual services or explore a long-term partnership."
+    ],
+    "stats": [
+      {
+        "value": 3,
+        "suffix": "",
+        "label": "Core Services"
+      },
+      {
+        "value": 5,
+        "suffix": "+",
+        "label": "Years Experience"
+      },
+      {
+        "value": 100,
+        "suffix": "%",
+        "label": "Certified & Insured"
+      }
+    ],
+    "services": [
+      {
+        "number": "01",
+        "title": "Estimate Generation",
+        "description": "Our unique, accurate estimate generation feature tailored for both homeowners and contractors. Get a clear, transparent quote for your solar project.",
+        "icon": "Calculator",
+        "tag": "Planning",
+        "features": [
+          "Accurate Quotes",
+          "Contractor Tailored",
+          "Homeowner Friendly",
+          "Fast Turnaround"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "Detach Service",
+        "description": "Safe and efficient removal of solar panels for roof repairs, replacements, or upgrades. Protecting your system and your warranty.",
+        "icon": "ArrowDown",
+        "tag": "Removal",
+        "features": [
+          "Safe Panel Removal",
+          "Warranty Protection",
+          "Roofing Project Prep",
+          "Certified Process"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Reinstall Service",
+        "description": "Professional reinstallation of your solar panel system after roofing or construction work is complete, ensuring peak performance.",
+        "icon": "ArrowUp",
+        "tag": "Reinstall",
+        "features": [
+          "System Reinstallation",
+          "Performance Check",
+          "Racking Expertise",
+          "Seamless Integration"
+        ]
+      },
+      {
+        "number": "04",
+        "title": "Solar Racking & Troubleshooting",
+        "description": "Expertise in solar racking systems and comprehensive troubleshooting to diagnose and fix issues, ensuring your system runs efficiently.",
+        "icon": "Wrench",
+        "tag": "Repair",
+        "features": [
+          "Racking Installation",
+          "System Diagnostics",
+          "Inverter Checks",
+          "Performance Optimization"
+        ]
+      },
+      {
+        "number": "05",
+        "title": "Contractor Partnerships",
+        "description": "Expand your roofing business by forming a strategic partnership with us. We provide certified crews for all your solar detach and reinstall needs.",
+        "icon": "Handshake",
+        "tag": "Partnership",
+        "features": [
+          "Expand Services",
+          "Increase Revenue",
+          "Reliable Subcontractor",
+          "Certified & Insured Crews"
+        ]
+      },
+      {
+        "number": "06",
+        "title": "Homeowner Solar Services",
+        "description": "Direct-to-homeowner services for solar detach and reinstall. We make your roof repair or upgrade process hassle-free by handling the solar aspect entirely.",
+        "icon": "Home",
+        "tag": "Residential",
+        "features": [
+          "Hassle-Free Process",
+          "System Protection",
+          "Clear Communication",
+          "Quality Guaranteed"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Ready to Work with Certified Solar Experts?",
+      "description": "Whether you need a one-time detach or are looking for a long-term partnership, we provide certified and insured solutions. Contact us for a free estimate.",
+      "buttonText": "Book Now",
+      "buttonLink": "#contact"
+    }
+  },
+  "whyChooseUs": {
+    "section": {
+      "badge": "WHY CHOOSE US",
+      "headline": "Your Trusted <span class=\"text-primary\">Solar Partner</span>",
+      "description": "Renewable Modern Energy LLC specializes in solar panel installations for both roofing contractors and homeowners. We bring five years of expertise, certified and insured solutions, and a unique estimate generation feature to every project."
+    },
+    "features": [
+      {
+        "icon": "Award",
+        "title": "5 Years of Expertise",
+        "description": "We have honed our skills over half a decade, specializing in the intricate process of solar detach and reinstall for all system types."
+      },
+      {
+        "icon": "Shield",
+        "title": "Certified & Insured Solutions",
+        "description": "We are fully certified and insured, giving both contractors and homeowners complete peace of mind that their solar investment is protected."
+      },
+      {
+        "icon": "Calculator",
+        "title": "Unique Estimate Generation",
+        "description": "Our tailored estimate feature provides accurate, transparent quotes, making it easy for contractors to bid and homeowners to budget."
+      },
+      {
+        "icon": "Handshake",
+        "title": "Contractor Partnership Focus",
+        "description": "We are designed to be the ideal partner for roofing companies, helping them expand services and revenue streams without the overhead."
+      },
+      {
+        "icon": "Tool",
+        "title": "Skilled, Proficient Crew",
+        "description": "Our team is expert in solar racking and troubleshooting systems, ensuring every detach and reinstall meets the highest quality standards."
+      },
+      {
+        "icon": "Zap",
+        "title": "Powering a Sustainable Future",
+        "description": "By seamlessly integrating solar services with roofing, we help homeowners and businesses move towards a more sustainable energy model."
+      }
+    ],
+    "stats": [
+      {
+        "value": "5+",
+        "suffix": "",
+        "label": "Years Experience"
+      },
+      {
+        "value": "Dallas",
+        "suffix": "",
+        "label": "Based In"
+      },
+      {
+        "value": "100",
+        "suffix": "%",
+        "label": "Certified & Insured"
+      },
+      {
+        "value": "Free",
+        "suffix": "",
+        "label": "Estimates"
+      }
+    ],
+    "cta": {
+      "badge": "GET STARTED",
+      "title": "Experience the Renewable Modern <span class=\"\">Energy Difference</span>",
+      "description": "Contact our team today for a free estimate. No obligation, just expert advice from your trusted solar detach and reinstall partner.",
+      "trustBadges": [
+        "Certified",
+        "Insured",
+        "5 Years Exp."
+      ],
+      "buttons": [
+        {
+          "text": "Get Free Estimate",
+          "href": "#contact",
+          "primary": true
+        },
+        {
+          "text": "Our Services",
+          "href": "#services",
+          "primary": false
+        }
+      ]
+    }
+  },
+  "portfolio": {
+    "section": {
+      "badge": "Our Work",
+      "headline": "Featured Solar <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/70\">Projects</span>"
+    },
+    "projects": [
+      {
+        "number": "01",
+        "title": "Residential Roof Replacement Detach",
+        "category": "Residential",
+        "image": "portfolio1",
+        "location": "Dallas, TX",
+        "year": "2025",
+        "accent": "from-primary to-primary/80",
+        "scope": "Full Detach & Reinstall",
+        "desc": "Safely removed and reinstalled a 10kW residential solar system for a complete roof replacement, ensuring zero damage and full system functionality."
+      },
+      {
+        "number": "02",
+        "title": "Commercial Flat Roof Solar Project",
+        "category": "Commercial",
+        "image": "portfolio2",
+        "location": "Plano, TX",
+        "year": "2025",
+        "accent": "from-primary to-primary/70",
+        "scope": "Commercial Detach & Reinstall",
+        "desc": "Managed the detach and reinstall of a large commercial solar array for a flat roof TPO replacement, coordinating with the roofing contractor for a seamless process."
+      },
+      {
+        "number": "03",
+        "title": "Contractor Partnership Program",
+        "category": "Partnership",
+        "image": "portfolio3",
+        "location": "Richardson, TX",
+        "year": "2024",
+        "accent": "from-primary/90 to-primary/60",
+        "scope": "Ongoing Solar Partner",
+        "desc": "Became the exclusive solar detach and reinstall partner for a major Dallas-area roofing company, handling all their solar client needs."
+      },
+      {
+        "number": "04",
+        "title": "Solar Racking System Upgrade",
+        "category": "Repair",
+        "image": "portfolio4",
+        "location": "Garland, TX",
+        "year": "2025",
+        "accent": "from-primary to-primary/80",
+        "scope": "Racking & Troubleshooting",
+        "desc": "Diagnosed an underperforming solar system, upgraded the racking and reconfigured the layout for a 15% increase in energy production."
+      },
+      {
+        "number": "05",
+        "title": "Multi-Family Solar Detach",
+        "category": "Commercial",
+        "image": "portfolio5",
+        "location": "Mesquite, TX",
+        "year": "2024",
+        "accent": "from-primary/80 to-primary/60",
+        "scope": "Apartment Complex Project",
+        "desc": "Efficiently detached and reinstalled solar panels across multiple apartment buildings to facilitate a large-scale roofing and renovation project."
+      }
+    ],
+    "button": {
+      "text": "View All Projects",
+      "link": "#portfolio"
+    }
+  },
+  "testimonials": {
+    "section": {
+      "badge": "Client Testimonials",
+      "headline": "What Our Customers & Partners Say",
+      "description": "Hear from homeowners and roofing contractors who have experienced the Renewable Modern Energy difference.",
+      "featured": "Trusted Solar Partner in Dallas, TX"
+    },
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "ABC Roofing Co.",
+        "position": "Project Manager",
+        "company": "Contractor Partner",
+        "avatar": "AR",
+        "text": "Partnering with Renewable Modern Energy was the best decision we made. Their detach and reinstall crew is fast, professional, and certified. It allowed us to say 'yes' to roofing jobs with solar panels without the headache."
+      },
+      {
+        "id": 2,
+        "name": "Mark S.",
+        "position": "Homeowner",
+        "company": "Residential Client",
+        "avatar": "MS",
+        "text": "I needed a new roof and was worried about my solar panels. Renewable Modern Energy took care of everything—from safely removing them to reinstalling them perfectly after the roof was done. Seamless process!"
+      },
+      {
+        "id": 3,
+        "name": "Top Tier Contractors",
+        "position": "Owner",
+        "company": "Commercial Partner",
+        "avatar": "TT",
+        "text": "Their estimate generation tool is a game-changer. We can provide our clients with an accurate solar quote instantly, which has won us multiple bids. A truly professional and reliable partner."
+      },
+      {
+        "id": 4,
+        "name": "Susan J.",
+        "position": "Property Manager",
+        "company": "Multi-Family Client",
+        "avatar": "SJ",
+        "text": "Managing a 20-unit apartment complex re-roof was a nightmare until we found Renewable Modern Energy. They coordinated the solar detach flawlessly, keeping our tenants happy and the project on schedule."
+      },
+      {
+        "id": 5,
+        "name": "Christian S.",
+        "position": "Founder",
+        "company": "Renewable Modern Energy LLC",
+        "avatar": "CS",
+        "text": "We built this company to fill a critical gap in the roofing industry. Our mission is to provide certified, insured, and expert solar detach and reinstall services that protect homeowners and empower contractors."
+      }
+    ],
+    "videos": [
+      {
+        "id": "v1",
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Residential Detach & Reinstall",
+        "name": "Mark S."
+      },
+      {
+        "id": "v2",
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Commercial Solar Project",
+        "name": "ABC Roofing Co."
+      },
+      {
+        "id": "v3",
+        "videoId": "dQw4w9WgXcQ",
+        "title": "Contractor Partnership Success",
+        "name": "Top Tier Contractors"
+      },
+      {
+        "id": "v4",
+        "videoId": "dQw4w9WgXcQ",
+        "title": "System Troubleshooting & Repair",
+        "name": "Christian S."
+      }
+    ],
+    "stats": {
+      "reviewPlatform": "Google Reviews",
+      "satisfactionFocus": "100% Certified & Insured",
+      "totalVideos": 15
+    }
+  },
+  "faq": {
+    "section": {
+      "badge": "Knowledge Base",
+      "headline": "Frequently Asked Questions",
+      "description": "Expert answers to common questions about solar detach, reinstall, estimate generation, and our services."
+    },
+    "categories": [
+      {
+        "id": "all",
+        "label": "All Questions",
+        "icon": null
+      },
+      {
+        "id": "solar",
+        "label": "Solar Services",
+        "icon": "Sun"
+      },
+      {
+        "id": "partnership",
+        "label": "Partnerships",
+        "icon": "Handshake"
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing & Estimates",
+        "icon": "DollarSign"
+      },
+      {
+        "id": "process",
+        "label": "Our Process",
+        "icon": "Settings"
+      }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "category": "solar",
+        "question": "What is a solar detach and reinstall?",
+        "answer": "A solar detach and reinstall (D&R) is the process of safely removing your solar panel system from your roof, storing it while roof repairs or replacements are completed, and then reinstalling it professionally. This protects your solar investment and maintains your roof warranty.",
+        "metadata": [
+          {
+            "label": "Detach",
+            "value": "Safe removal & storage"
+          },
+          {
+            "label": "Reinstall",
+            "value": "Professional re-mounting"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "category": "partnership",
+        "question": "How can a roofing contractor partner with you?",
+        "answer": "We make it easy! By partnering with Renewable Modern Energy, you can expand your service offerings and win more bids. We act as your certified, insured solar subcontractor, handling all D&R work. Contact us to set up a partnership and get access to our unique estimate generation tool.",
+        "metadata": [
+          {
+            "label": "Benefit",
+            "value": "Expand services & revenue"
+          },
+          {
+            "label": "Process",
+            "value": "Contact us to get started"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "category": "pricing",
+        "question": "How does the estimate generation work?",
+        "answer": "Our unique estimate generation feature provides accurate, transparent quotes tailored for your specific project. Simply contact us with project details, and we'll provide a clear breakdown of costs for the detach and reinstall services, helping you bid with confidence.",
+        "metadata": [
+          {
+            "label": "For Contractors",
+            "value": "Accurate bidding quotes"
+          },
+          {
+            "label": "For Homeowners",
+            "value": "Transparent pricing"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "category": "process",
+        "question": "How long does the detach and reinstall process take?",
+        "answer": "A typical residential detach takes about 1 hour, while a reinstall takes approximately 2.5 hours. The total time can vary based on system size, roof complexity, and weather. We coordinate closely with your roofing contractor to fit the timeline perfectly.",
+        "metadata": [
+          {
+            "label": "Detach Time",
+            "value": "~1 hour"
+          },
+          {
+            "label": "Reinstall Time",
+            "value": "~2.5 hours"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "category": "solar",
+        "question": "Are you certified and insured?",
+        "answer": "Yes, absolutely. Renewable Modern Energy LLC is fully certified and insured. We provide proof of insurance for all projects, giving both contractors and homeowners complete peace of mind that their solar investment is in safe hands.",
+        "metadata": [
+          {
+            "label": "Status",
+            "value": "Fully certified & insured"
+          },
+          {
+            "label": "Verification",
+            "value": "Proof provided on request"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "category": "solar",
+        "question": "What other services do you offer besides detach and reinstall?",
+        "answer": "While D&R is our specialty, our skilled crew is also proficient in solar racking, system troubleshooting, and diagnostics. We can help identify performance issues and make necessary repairs to get your system back to peak efficiency.",
+        "metadata": [
+          {
+            "label": "Services",
+            "value": "Racking, troubleshooting, repairs"
+          },
+          {
+            "label": "Outcome",
+            "value": "Peak system performance"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "category": "partnership",
+        "question": "Why should roofing contractors consider solar partnerships?",
+        "answer": "The roofing industry is evolving, and homeowners increasingly seek sustainable solutions. By partnering with us, you can say 'yes' to more jobs, expand your revenue streams, and differentiate your business from competitors who aren't solar-ready.",
+        "metadata": [
+          {
+            "label": "Key Benefit",
+            "value": "Win more bids"
+          },
+          {
+            "label": "Trend",
+            "value": "Growing demand for solar"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "category": "process",
+        "question": "Will removing my panels void my solar warranty?",
+        "answer": "It can, if not done by a certified professional. That's why we are fully certified and follow strict protocols. Our process ensures your system is handled correctly, protecting your manufacturer's warranty and your investment.",
+        "metadata": [
+          {
+            "label": "Risk",
+            "value": "Warranty voided by DIY/uncertified"
+          },
+          {
+            "label": "Our Solution",
+            "value": "Certified process protects warranty"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "category": "pricing",
+        "question": "Do you offer free estimates?",
+        "answer": "Yes! We offer free, no-obligation estimate generation. Contact us by phone at 469-334-9629 or email RenewableModernEnergy@gmail.com with your project details, and we'll provide a clear, accurate quote.",
+        "metadata": [
+          {
+            "label": "Estimate",
+            "value": "Free"
+          },
+          {
+            "label": "Contact",
+            "value": "Phone or email"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "category": "process",
+        "question": "How do you coordinate with my roofer?",
+        "answer": "We communicate directly with your roofing contractor to align on timelines. The ideal process is: we detach the panels, the roofer completes the work, and then we return to reinstall the system. We handle all solar-related logistics.",
+        "metadata": [
+          {
+            "label": "Coordination",
+            "value": "We work directly with roofer"
+          },
+          {
+            "label": "Sequence",
+            "value": "Detach → Roof Work → Reinstall"
+          }
+        ]
+      }
+    ],
+    "knowledgeCard": {
+      "title": "Still Have Questions?",
+      "description": "Our solar experts are ready to help with your specific project or partnership needs.",
+      "buttonText": "Contact Our Team",
+      "buttonLink": "#contact",
+      "buttons": [
+        {
+          "text": "Contact Our Team",
+          "href": "#contact",
+          "primary": true
+        }
+      ]
+    }
+  },
+  "quote": {
+    "section": {
+      "badge": "GET AN ESTIMATE",
+      "headline": "Request Your <span class=\"font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary to-primary/80\">Free Solar Estimate</span>",
+      "description": "Let our skilled team know how we can assist with your solar detach, reinstall, or partnership needs. Get an accurate, transparent quote today."
+    },
+    "services": [
+      {
+        "id": 1,
+        "title": "Estimate Generation",
+        "desc": "Accurate project quotes",
+        "icon": "⌗"
+      },
+      {
+        "id": 2,
+        "title": "Detach Service",
+        "desc": "Safe panel removal",
+        "icon": "⎔"
+      },
+      {
+        "id": 3,
+        "title": "Reinstall Service",
+        "desc": "Professional remounting",
+        "icon": "⌖"
+      },
+      {
+        "id": 4,
+        "title": "Troubleshooting",
+        "desc": "Diagnostics & repair",
+        "icon": "⌘"
+      },
+      {
+        "id": 5,
+        "title": "Contractor Partnership",
+        "desc": "Expand your business",
+        "icon": "⚡"
+      },
+      {
+        "id": 6,
+        "title": "Other Inquiries",
+        "desc": "Racking, upgrades & more",
+        "icon": "◈"
+      }
+    ],
+    "projectTypes": [
+      {
+        "value": "detach_only",
+        "label": "Detach Only"
+      },
+      {
+        "value": "detach_reinstall",
+        "label": "Detach & Reinstall"
+      },
+      {
+        "value": "troubleshooting",
+        "label": "Troubleshooting / Repair"
+      },
+      {
+        "value": "partnership",
+        "label": "Contractor Partnership"
+      },
+      {
+        "value": "estimate",
+        "label": "Just an Estimate"
+      }
+    ],
+    "timelines": [
+      {
+        "value": "urgent",
+        "label": "Urgent (ASAP)"
+      },
+      {
+        "value": "standard",
+        "label": "Standard (1-2 weeks)"
+      },
+      {
+        "value": "planned",
+        "label": "Planned (2-4 weeks)"
+      },
+      {
+        "value": "future",
+        "label": "Future Project (1+ month)"
+      }
+    ],
+    "email": "RenewableModernEnergy@gmail.com",
+    "success": {
+      "title": "Estimate Request Received",
+      "message": "Your inquiry has been sent to the team at Renewable Modern Energy LLC.",
+      "response": "We'll respond promptly with your accurate project estimate or to schedule your free consultation.",
+      "buttonText": "Close"
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "Renewable Modern Energy LLC",
+      "tagline": "HARNESS THE POWER OF SOLAR",
+      "description": "Specializing in solar panel installations for both roofing contractors and homeowners. We excel in 'Solar Detach & Reinstalls' and provide certified, insured solutions with a unique estimate generation feature."
+    },
+    "services": {
+      "title": "Our Services",
+      "main": [
+        {
+          "label": "Estimate Generation",
+          "href": "/estimate-generation",
+          "icon": "Calculator"
+        },
+        {
+          "label": "Detach Service",
+          "href": "/detach-service",
+          "icon": "ArrowDown"
+        },
+        {
+          "label": "Reinstall Service",
+          "href": "/reinstall-service",
+          "icon": "ArrowUp"
+        },
+        {
+          "label": "Solar Racking",
+          "href": "/solar-racking",
+          "icon": "Tool"
+        },
+        {
+          "label": "System Troubleshooting",
+          "href": "/troubleshooting",
+          "icon": "Settings"
+        },
+        {
+          "label": "Contractor Partnerships",
+          "href": "/partnerships",
+          "icon": "Handshake"
+        }
+      ],
+      "materials": {
+        "title": "Service Areas",
+        "items": [
+          {
+            "label": "Dallas, TX",
+            "href": "/dallas"
+          },
+          {
+            "label": "Plano, TX",
+            "href": "/plano"
+          },
+          {
+            "label": "Richardson, TX",
+            "href": "/richardson"
+          },
+          {
+            "label": "Garland, TX",
+            "href": "/garland"
+          }
+        ]
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "email": "RenewableModernEnergy@gmail.com",
+      "phone": "+1 (469) 334-9629",
+      "address": "Dallas, TX 75234, United States",
+      "emergency": "",
+      "areas": "Dallas • Plano • Richardson • Garland • Mesquite & Surrounding Texas Communities"
+    },
+    "certifications": [
+      {
+        "cert": "Experience",
+        "number": "5+ Years",
+        "icon": "Calendar"
+      },
+      {
+        "cert": "Headquarters",
+        "number": "Dallas, TX",
+        "icon": "MapPin"
+      },
+      {
+        "cert": "Certified",
+        "number": "Licensed",
+        "icon": "Warranty"
+      },
+      {
+        "cert": "Insured",
+        "number": "Full Coverage",
+        "icon": "Shield"
+      },
+      {
+        "cert": "Free",
+        "number": "Estimates",
+        "icon": "MessageSquare"
+      },
+      {
+        "cert": "Service",
+        "number": "Contractor & Homeowner",
+        "icon": "Users"
+      }
+    ],
+    "quickLinks": [
+      {
+        "label": "Get an Estimate",
+        "href": "#contact",
+        "icon": "Phone"
+      },
+      {
+        "label": "Blog",
+        "href": "#blog",
+        "icon": "FileText"
+      },
+      {
+        "label": "About Us",
+        "href": "#about",
+        "icon": "Users"
+      }
+    ],
+    "social": [
+      {
+        "platform": "Email",
+        "icon": "Mail",
+        "href": "mailto:RenewableModernEnergy@gmail.com"
+      },
+      {
+        "platform": "Phone",
+        "icon": "Phone",
+        "href": "tel:+14693349629"
+      },
+      {
+        "platform": "Facebook",
+        "icon": "Facebook",
+        "href": "#"
+      },
+      {
+        "platform": "Instagram",
+        "icon": "Instagram",
+        "href": "#"
+      },
+      {
+        "platform": "X",
+        "icon": "Twitter",
+        "href": "#"
+      },
+      {
+        "platform": "TikTok",
+        "icon": "Music",
+        "href": "#"
+      }
+    ],
+    "bottom": {
+      "copyright": "© 2035 by Renewable Modern Energy LLC",
+      "rights": "All rights reserved. Powered and secured by Wix.",
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy"
+        },
+        {
+          "label": "Terms & Conditions",
+          "href": "/terms"
+        },
+        {
+          "label": "Accessibility",
+          "href": "/accessibility"
+        },
+        {
+          "label": "Refund Policy",
+          "href": "/refunds"
+        }
+      ],
+      "tagline": "HARNESS THE POWER OF SOLAR"
+    },
+    "marquee": {
+      "texts": [
+        "HARNESS THE POWER OF SOLAR",
+        "EXPERT SOLAR DETACH & REINSTALLS",
+        "CERTIFIED & INSURED • FREE ESTIMATES • 5+ YEARS EXPERTISE"
+      ]
+    }
+  },
+  "leadership": {
+    "section": {
+      "badge": "OUR LEADERSHIP",
+      "headline": "Driven by a <span class=\"text-primary\">Sustainable Mission</span>",
+      "description": "At Renewable Modern Energy LLC, our leadership is focused on bridging the gap between roofing and solar, providing a certified and trusted service that empowers contractors and protects homeowners' investments."
+    },
+    "ceo": {
+      "name": "Christian S.",
+      "title": "OWNER & FOUNDER",
+      "quotes": [
+        "We built this company to fill a critical gap in the roofing industry. Our mission is to provide certified, insured, and expert solar detach and reinstall services that protect homeowners and empower contractors."
+      ],
+      "description": [
+        "With over five years of hands-on expertise in the solar industry, the founder saw a clear need for a specialized partner that roofing contractors could trust. Renewable Modern Energy LLC was created to make solar detach and reinstall a seamless, reliable process.",
+        "Based in Dallas, Texas, the company leads with a commitment to quality, efficiency, and the highest standards of safety on every project, from simple detaches to complex commercial systems."
+      ],
+      "social": {
+        "linkedin": "#",
+        "email": "RenewableModernEnergy@gmail.com"
+      },
+      "badges": {
+        "top": "Solar Expert",
+        "bottom": "Contractor-Focused"
+      },
+      "alt": "Christian S. - Owner of Renewable Modern Energy LLC"
+    }
+  }
+}
