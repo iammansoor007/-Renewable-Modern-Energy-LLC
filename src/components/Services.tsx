@@ -250,8 +250,8 @@ const Services = () => {
           transition={{ duration: 0.65 }}
           className="relative overflow-hidden rounded-3xl"
           style={{
-            background: "linear-gradient(135deg, #7f1d1d 0%, #b91c1c 45%, #dc2626 100%)",
-            boxShadow: "0 25px 60px rgba(185,28,28,0.30)"
+            background: "linear-gradient(135deg, #1a0203 0%, #5c0a11 40%, #8b0a14 70%, #c0151a 100%)",
+            boxShadow: "0 25px 60px rgba(92,10,17,0.55)"
           }}
         >
           {/* Technical Grid Pattern */}
