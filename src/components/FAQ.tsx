@@ -647,12 +647,12 @@ const KnowledgeCard = () => {
     <div className="relative mt-16 md:mt-24 lg:mt-32">
       {/* CTA Container */}
       <div className="relative rounded-3xl overflow-hidden">
-        {/* Luxury Mahogany-to-Amber-to-Gold Metallic Gradient Background */}
+        {/* Red-to-Black Brand Gradient Background */}
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(135deg, #25140b 0%, #683a12 50%, #f7b718 100%)",
-            boxShadow: "0 25px 60px rgba(104,58,18,0.25)"
+            background: "linear-gradient(135deg, #7f1d1d 0%, #b91c1c 45%, #dc2626 100%)",
+            boxShadow: "0 25px 60px rgba(185,28,28,0.30)"
           }}
         />
 

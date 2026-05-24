@@ -195,7 +195,7 @@ const Navbar = () => {
               <div className="h-16 w-32 sm:h-16 sm:w-40 lg:h-20 lg:w-48 rounded-2xl flex items-center justify-center overflow-hidden">
                 <img
                   src={logo}
-                  alt="The Renov Team Logo"
+                  alt="Renewable Modern Energy LLC Logo"
                   className="h-full w-full object-contain p-1"
                 />
               </div>
@@ -452,7 +452,7 @@ const Navbar = () => {
                       <div className="h-12 w-36 rounded-xl flex items-center justify-center overflow-hidden">
                         <img
                           src={logo2nd}
-                          alt="The Renov Team Logo"
+                          alt="Renewable Modern Energy LLC Logo"
                           className="h-full w-full object-contain"
                         />
                       </div>

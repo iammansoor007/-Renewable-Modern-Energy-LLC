@@ -609,12 +609,12 @@ const CTASection = memo(({ cta }: CTASectionProps) => {
     <div className="relative mt-16 md:mt-24 lg:mt-32">
       {/* CTA Container */}
       <div className="relative rounded-3xl overflow-hidden">
-        {/* Luxury Mahogany-to-Amber-to-Gold Metallic Gradient Background */}
+        {/* Red-to-Black Brand Gradient Background */}
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(135deg, #25140b 0%, #683a12 50%, #f7b718 100%)",
-            boxShadow: "0 25px 60px rgba(104,58,18,0.25)"
+            background: "linear-gradient(135deg, #7f1d1d 0%, #b91c1c 45%, #dc2626 100%)",
+            boxShadow: "0 25px 60px rgba(185,28,28,0.30)"
           }}
         />
 
@@ -709,7 +709,7 @@ const CTASection = memo(({ cta }: CTASectionProps) => {
               >
                 <img
                   src={vectoroverlay}
-                  alt="The Renov Team Professional"
+                  alt="Renewable Modern Energy LLC Professional"
                   loading="lazy"
                   className="w-full h-auto object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.4)] will-change-transform transform-gpu"
                 />
@@ -727,7 +727,7 @@ const CTASection = memo(({ cta }: CTASectionProps) => {
               className="inline-block mb-4"
             >
               <span className="px-3 py-1.5 text-xs font-semibold bg-background/20 border border-white/30 rounded-full text-white/90 backdrop-blur-sm">
-                THE RENOV TEAM
+                RENEWABLE MODERN ENERGY LLC
               </span>
             </motion.div>
 
@@ -837,7 +837,7 @@ const WhyChooseUs = () => {
     <section
       ref={sectionRef}
       className="relative bg-background py-20 md:py-24 lg:py-32 overflow-hidden"
-      aria-label="Why Choose The Renov Team"
+      aria-label="Why Choose Renewable Modern Energy LLC"
     >
       <CinematicBackground />
 

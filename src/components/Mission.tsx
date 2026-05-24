@@ -21,7 +21,7 @@ const Mission = () => {
       <div className="grid-editorial items-center">
         <div className="md:col-span-5 order-2 md:order-1">
           <div className="mission-image overflow-hidden aspect-[3/4] relative">
-            <img src={teamImage} alt="The Renov Team at work" className="w-full h-full object-cover" />
+            <img src={teamImage} alt="Renewable Modern Energy LLC at work" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 bg-primary/90 backdrop-blur-sm p-5 border border-primary-foreground/10">
               <div className="grid grid-cols-3 gap-4">
@@ -40,8 +40,8 @@ const Mission = () => {
           <div className="accent-line mb-6 mission-copy" />
           <h2 className="heading-lg text-foreground mb-8 mission-headline">Excellence in Every<br />Installation.</h2>
           <div className="space-y-6">
-            <p className="body-lg text-foreground/90 mission-copy">The Renov Team was founded to do more than just install roofs. We are here to transform your home with precision, protection, and care.</p>
-            <p className="body-sm text-muted-foreground mission-copy">The Renov Team was launched to bring veteran discipline and professional precision to every roofing and solar project.</p>
+            <p className="body-lg text-foreground/90 mission-copy">Renewable Modern Energy LLC was founded to do more than just install roofs. We are here to transform your home with precision, protection, and care.</p>
+            <p className="body-sm text-muted-foreground mission-copy">Renewable Modern Energy LLC was launched to bring veteran discipline and professional precision to every roofing and solar project.</p>
             <p className="body-sm text-muted-foreground mission-copy italic border-l-2 border-primary/30 pl-4">"We don't just build roofs. We restore protection, quality, and professionalism to the construction industry."</p>
           </div>
         </div>

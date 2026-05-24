@@ -37,7 +37,7 @@ const QuickQuote = () => {
         setIsSubmitting(true);
 
         const emailContent = `
-🏠 NEW QUICK QUOTE REQUEST - The Renov Team
+🏠 NEW QUICK QUOTE REQUEST - Renewable Modern Energy LLC
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 

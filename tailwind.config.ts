@@ -57,12 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom colors with strong contrast
-        'dark-gold': '#9B7B1C',
-        'rich-gold': '#B8960C',
-        'light-gold': '#D4AF37',
-        'black-pure': '#000000',
-        'white-pure': '#FFFFFF',
+        // Renewable Modern Energy brand palette
+        'brand-red': '#DC2626',
+        'brand-red-light': '#EF4444',
+        'brand-red-dark': '#B91C1C',
+        'brand-black': '#171717',
+        'brand-white': '#FFFFFF',
         'gray-dark': '#333333',
         'gray-medium': '#666666',
         'gray-light': '#999999',

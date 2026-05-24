@@ -746,7 +746,7 @@ const GetQuote = () => {
       .join(", ");
 
     const emailContent = `
-🏠 The Renov Team QUOTE REQUEST
+🏠 Renewable Modern Energy LLC QUOTE REQUEST
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -781,7 +781,7 @@ ${formData.message}
               Accept: "application/json",
             },
             body: JSON.stringify({
-              _subject: `🏠 The Renov Team Quote Request - ${formData.name}`,
+              _subject: `🏠 Renewable Modern Energy LLC Quote Request - ${formData.name}`,
               name: formData.name,
               email: formData.email,
               phone: formData.phone,
@@ -820,7 +820,7 @@ ${formData.message}
         console.log("FormSubmit failed, using mailto fallback");
       }
 
-      window.location.href = `mailto:${email}?subject=🖌️ The Renov Team Quote Request - ${formData.name}&body=${encodeURIComponent(emailContent)}`;
+      window.location.href = `mailto:${email}?subject=🖌️ Renewable Modern Energy LLC Quote Request - ${formData.name}&body=${encodeURIComponent(emailContent)}`;
       setShowSuccess(true);
       setFormStep(1);
       setSelectedServices([]);

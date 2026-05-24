@@ -52,73 +52,62 @@
 
   :root {
     /* ===============================
-       LIGHT MODE BRAND THEME
-       Inspired from your logo colors
-       Gold + Cream + Dark Brown
+       RENEWABLE MODERN ENERGY LLC
+       Brand Theme: Red · White · Black
     ================================= */
 
-    --background: 42 45% 98%;
-    /* soft warm white */
+    /* BACKGROUND — pure white */
+    --background: 0 0% 100%;
 
-    --foreground: 20 35% 12%;
-    /* deep brown text */
+    /* FOREGROUND — near-black text */
+    --foreground: 0 0% 8%;
 
-    --popover-foreground: 20 35% 12%;
-    --card-foreground: 20 35% 12%;
+    --popover-foreground: 0 0% 8%;
+    --card-foreground: 0 0% 8%;
 
     --card: 0 0% 100%;
     --popover: 0 0% 100%;
 
-    /* PRIMARY GOLD */
-    --primary: 42 88% 53%;
-    /* logo gold */
-
+    /* PRIMARY — Vibrant Red  #DC2626 */
+    --primary: 0 72% 51%;
     --primary-foreground: 0 0% 100%;
 
-    /* SECONDARY DARK BROWN */
-    --secondary: 18 45% 16%;
-    /* dark chocolate brown */
-
+    /* SECONDARY — Deep Black */
+    --secondary: 0 0% 9%;
     --secondary-foreground: 0 0% 100%;
 
-    /* ACCENT GOLD */
-    --accent: 38 82% 48%;
-
+    /* ACCENT — Brighter Red  #EF4444 */
+    --accent: 0 84% 60%;
     --accent-foreground: 0 0% 100%;
 
     /* MUTED / SURFACES */
-    --muted: 45 40% 95%;
-    --muted-foreground: 25 18% 35%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
 
-    --border: 42 20% 88%;
+    --border: 0 0% 88%;
     --input: 0 0% 100%;
 
-    --destructive: 0 75% 55%;
+    --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --ring: 42 88% 53%;
-
+    --ring: 0 72% 51%;
     --radius: 0.75rem;
 
-    /* CUSTOM BRAND COLORS */
-    --deep: 18 45% 16%;
+    /* CUSTOM BRAND TOKENS */
+    --deep: 0 0% 9%;
     --surface: 0 0% 100%;
-    --surface-light: 45 50% 96%;
-    --text-dark: 20 35% 12%;
+    --surface-light: 0 0% 96%;
+    --text-dark: 0 0% 8%;
 
     /* SIDEBAR */
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 20 35% 12%;
-
-    --sidebar-primary: 42 88% 53%;
+    --sidebar-foreground: 0 0% 8%;
+    --sidebar-primary: 0 72% 51%;
     --sidebar-primary-foreground: 0 0% 100%;
-
-    --sidebar-accent: 38 82% 48%;
+    --sidebar-accent: 0 84% 60%;
     --sidebar-accent-foreground: 0 0% 100%;
-
-    --sidebar-border: 42 20% 88%;
-
-    --sidebar-ring: 42 88% 53%;
+    --sidebar-border: 0 0% 88%;
+    --sidebar-ring: 0 72% 51%;
 
     /* TYPOGRAPHY */
     --font-heading: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
@@ -140,11 +129,7 @@
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    /* LIGHT MODE BACKGROUND */
-    background: linear-gradient(180deg,
-        hsl(42 45% 98%) 0%,
-        hsl(45 50% 96%) 100%);
+    background: #ffffff;
   }
 
   #root {
@@ -153,24 +138,14 @@
     min-height: 100vh;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     letter-spacing: -0.03em;
     line-height: 1.05;
     color: hsl(var(--secondary));
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
+  h1, h2, h3, h4, h5, h6,
   .font-black,
   .font-extrabold {
     font-weight: 700 !important;
@@ -182,9 +157,7 @@
     contain-intrinsic-size: 1px 1000px;
   }
 
-  #hero,
-  .navbar,
-  header {
+  #hero, .navbar, header {
     content-visibility: visible !important;
     will-change: transform, opacity;
   }
@@ -232,7 +205,7 @@
     line-height: 1.5;
   }
 
-  /* GOLD BRAND LINE */
+  /* RED BRAND LINE */
   .accent-line {
     @apply w-14 h-1 rounded-full;
     background: hsl(var(--primary));
@@ -242,42 +215,33 @@
     @apply grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8;
   }
 
-  /* GOLD TEXT GRADIENT */
+  /* RED-TO-BLACK TEXT GRADIENT */
   .text-gradient {
-    background: linear-gradient(135deg,
-        hsl(var(--primary)) 0%,
-        hsl(var(--secondary)) 100%);
-
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   /* CTA BUTTON */
   .bg-gradient-cta {
-    background: linear-gradient(135deg,
-        hsl(var(--primary)),
-        hsl(var(--accent)));
-
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
     color: white;
   }
 
   /* PRIMARY BUTTON */
   .drpaint-btn-primary {
-    background: linear-gradient(135deg,
-        hsl(var(--primary)),
-        hsl(var(--accent)));
-
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
     color: white;
     transition: all 0.35s ease;
     border-radius: 0.75rem;
     font-weight: 600;
-    box-shadow: 0 10px 25px rgba(247, 183, 24, 0.25);
+    box-shadow: 0 10px 25px rgba(220, 38, 38, 0.30);
   }
 
   .drpaint-btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 16px 35px rgba(247, 183, 24, 0.35);
-    filter: brightness(1.03);
+    box-shadow: 0 16px 35px rgba(220, 38, 38, 0.45);
+    filter: brightness(1.05);
   }
 
   /* SECONDARY BUTTON */
@@ -290,40 +254,40 @@
   }
 
   .drpaint-btn-secondary:hover {
-    background: hsl(var(--secondary) / 0.92);
+    background: hsl(var(--secondary) / 0.85);
     transform: translateY(-2px);
   }
 
   /* CARD SYSTEM */
   .drpaint-card {
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(247, 183, 24, 0.12);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.97);
+    border: 1px solid rgba(220, 38, 38, 0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     border-radius: 1rem;
     backdrop-filter: blur(8px);
   }
 
   .drpaint-shadow {
-    box-shadow: 0 10px 25px rgba(247, 183, 24, 0.15);
+    box-shadow: 0 10px 25px rgba(220, 38, 38, 0.18);
   }
 
   /* NAVBAR */
   .navbar-glass {
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(247, 183, 24, 0.12);
+    border-bottom: 1px solid rgba(220, 38, 38, 0.12);
   }
 
   /* HERO OVERLAY */
   .hero-overlay {
     background: linear-gradient(135deg,
-        rgba(247, 183, 24, 0.88),
-        rgba(45, 16, 7, 0.88));
+        rgba(220, 38, 38, 0.85),
+        rgba(10, 10, 10, 0.88));
   }
 
   /* BRAND ACCENTS */
   .gold-accent {
-    color: hsl(var(--accent));
+    color: hsl(var(--primary));
   }
 
   .brown-accent {
@@ -337,14 +301,10 @@
     perspective: 1000px;
   }
 
-  /* ULTRA-SMOOTH PREMIUM FLOATING MICRO-ANIMATION */
+  /* FLOATING MICRO-ANIMATION */
   @keyframes float {
-    0%, 100% {
-      transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-      transform: translateY(-8px) rotate(1deg);
-    }
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50%       { transform: translateY(-8px) rotate(1deg); }
   }
 
   .animate-float {

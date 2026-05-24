@@ -173,7 +173,7 @@ export default function AboutSection() {
     <section
       ref={sectionRef}
       className="relative bg-background overflow-hidden py-6 md:py-8 lg:py-12"
-      aria-label="About The Renov Team"
+      aria-label="About Renewable Modern Energy LLC"
     >
       <div className="absolute inset-0">
         <ParticlesBackground />

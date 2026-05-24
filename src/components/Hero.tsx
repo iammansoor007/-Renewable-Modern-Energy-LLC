@@ -515,7 +515,7 @@ const RoofingInquiryForm = () => {
                 Estimate Request Sent!
               </h3>
               <p className="text-muted-foreground text-sm max-w-xs mx-auto">
-                Thanks for contacting The Renov Team. We'll reach out within 24 hours with your free estimate.
+                Thanks for contacting Renewable Modern Energy LLC. We'll reach out within 24 hours with your free estimate.
               </p>
             </motion.div>
           )}
@@ -554,7 +554,7 @@ const Hero = () => {
       <div className="absolute inset-0 -z-10">
         <motion.img
           src={heroBg}
-          alt="The Renov Team - Professional renovation & roofing services"
+          alt="Renewable Modern Energy LLC - Professional renovation & roofing services"
           loading="eager"
           {...({ fetchpriority: "high" } as any)}
           initial={{ scale: 1.1 }}

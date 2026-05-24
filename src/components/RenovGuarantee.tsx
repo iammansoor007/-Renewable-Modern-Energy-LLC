@@ -32,7 +32,7 @@ const RenovGuarantee = () => {
               {/* Headline */}
               <h2 className="text-[2.4rem] xs:text-[2.8rem] sm:text-5xl md:text-6xl lg:text-[5.5rem] xl:text-[7rem] font-black text-foreground uppercase tracking-tighter leading-[0.85] italic">
                 Free<br />
-                <span className="text-primary">Renov</span><br />
+                <span className="text-primary">Energy</span><br />
                 Guarantee
               </h2>
             </div>
@@ -40,7 +40,7 @@ const RenovGuarantee = () => {
             {/* Body copy */}
             <div className="space-y-3 sm:space-y-4 max-w-lg">
               <p className="text-foreground/60 text-sm sm:text-base md:text-lg leading-relaxed">
-                The Renov Team has a{" "}
+                Renewable Modern Energy LLC has a{" "}
                 <strong className="text-foreground">95% customer satisfaction rating</strong>
                 {" "}and a FREE service guarantee to ensure every promise is fulfilled.
               </p>
@@ -78,7 +78,7 @@ const RenovGuarantee = () => {
                 </div>
               </div>
               <div>
-                <p className="text-foreground font-black uppercase tracking-wider text-xs sm:text-sm leading-tight">The Renov Team</p>
+                <p className="text-foreground font-black uppercase tracking-wider text-xs sm:text-sm leading-tight">Renewable Modern Energy LLC</p>
                 <p className="text-primary font-black uppercase tracking-wider text-xs sm:text-sm leading-tight">Guarantee</p>
                 <div className="flex gap-0.5 sm:gap-1 mt-1.5 sm:mt-2">
                   {[...Array(5)].map((_, i) => (

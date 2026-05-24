@@ -238,7 +238,7 @@ const CTASection = () => {
           </h2>
 
           <p className="text-muted-foreground text-lg md:text-xl font-light max-w-2xl mx-auto">
-            Join hundreds of satisfied homeowners who trust The Renov Team with their most important investment.
+            Join hundreds of satisfied homeowners who trust Renewable Modern Energy LLC with their most important investment.
           </p>
         </div>
 
@@ -262,7 +262,7 @@ const CTASection = () => {
                 <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
                   <Icons.Flag />
                   <span className="text-xs font-medium tracking-wider text-primary">
-                    The Renov Team • Professional Home Renovation & Roofing
+                    Renewable Modern Energy LLC • Professional Home Renovation & Roofing
                   </span>
                 </div>
 
