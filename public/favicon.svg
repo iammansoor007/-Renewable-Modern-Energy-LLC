@@ -1,8 +1,26 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- THE RENOV TEAM LOGO -->
-  <path d="M16 4L4 24H10L16 12L22 24H28L16 4Z" fill="#f7b718"/>
-  <!-- SOLAR ELEMENT -->
-  <rect x="14" y="16" width="4" height="1.5" fill="white" opacity="0.8"/>
-  <rect x="13" y="19" width="6" height="1.5" fill="white" opacity="0.6"/>
-  <rect x="12" y="22" width="8" height="1.5" fill="white" opacity="0.4"/>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#B91C1C"/>
+
+  <!-- Sun rays -->
+  <line x1="32" y1="6" x2="32" y2="12" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="32" y1="52" x2="32" y2="58" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="6" y1="32" x2="12" y2="32" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="52" y1="32" x2="58" y2="32" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="13.4" y1="13.4" x2="17.6" y2="17.6" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="46.4" y1="46.4" x2="50.6" y2="50.6" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="50.6" y1="13.4" x2="46.4" y2="17.6" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="17.6" y1="46.4" x2="13.4" y2="50.6" stroke="white" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Solar panel grid (center) -->
+  <rect x="19" y="24" width="26" height="18" rx="2" fill="white" opacity="0.95"/>
+  <!-- Panel grid lines horizontal -->
+  <line x1="19" y1="30" x2="45" y2="30" stroke="#B91C1C" stroke-width="1"/>
+  <line x1="19" y1="36" x2="45" y2="36" stroke="#B91C1C" stroke-width="1"/>
+  <!-- Panel grid lines vertical -->
+  <line x1="27.7" y1="24" x2="27.7" y2="42" stroke="#B91C1C" stroke-width="1"/>
+  <line x1="36.3" y1="24" x2="36.3" y2="42" stroke="#B91C1C" stroke-width="1"/>
+  <!-- Panel mounting base -->
+  <rect x="29" y="42" width="6" height="3" rx="1" fill="white" opacity="0.8"/>
+  <rect x="25" y="45" width="14" height="2" rx="1" fill="white" opacity="0.7"/>
 </svg>

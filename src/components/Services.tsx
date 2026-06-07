@@ -81,71 +81,82 @@ const ServiceCard = memo(({
       transition={{ duration: 0.3 }}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
-      className={`group relative bg-white rounded-2xl overflow-hidden border border-border
-        shadow-sm hover:shadow-2xl hover:shadow-primary/10
-        transition-all duration-500 hover:-translate-y-1 flex flex-col cursor-pointer transform-gpu will-change-transform
+      className={`group relative bg-gradient-to-b from-white to-gray-50/40 rounded-3xl overflow-hidden border border-gray-150
+        shadow-[0_8px_30px_rgb(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(185,28,28,0.1)]
+        transition-all duration-500 hover:-translate-y-2 flex flex-col cursor-pointer transform-gpu will-change-transform
         ${orphan ? "md:col-start-2" : ""}`}
     >
-      {/* Red left accent bar */}
-      <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary
-                      scale-y-0 group-hover:scale-y-100
-                      transition-transform duration-500 origin-top z-10" />
+      {/* Top crimson glowing border accent */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-red-500 to-rose-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-10" />
 
-      {/* Image */}
-      <div className="relative h-48 overflow-hidden shrink-0 bg-gradient-to-br from-primary/5 to-primary/10">
-        {img ? (
-          <>
-            <img src={img} alt={service.title} loading="eager"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 will-change-transform transform-gpu" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-          </>
-        ) : (
-          <div className="w-full h-full flex items-center justify-center">
-            <Icon className="w-20 h-20 text-primary/20" />
-          </div>
-        )}
-        <div className="absolute top-4 left-4">
-          <span className="bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">
-            {service.tag}
-          </span>
-        </div>
-        <div className="absolute bottom-4 right-4">
-          <span className="text-white/40 font-black text-4xl leading-none select-none">
-            {service.number}
-          </span>
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="flex flex-col flex-1 p-6">
-        <div className="flex items-center gap-3 mb-3">
-          <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center
-                          group-hover:bg-primary transition-colors duration-300 shrink-0">
-            <Icon className="w-5 h-5 text-primary group-hover:text-white transition-colors duration-300" />
-          </div>
-          <h3 className="text-lg font-black text-foreground group-hover:text-primary
-                         transition-colors duration-300 leading-tight">
-            {service.title}
-          </h3>
-        </div>
-
-        <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-2">
-          {service.description}
-        </p>
-
-        <div className="grid grid-cols-2 gap-2 mb-5 flex-1">
-          {service.features?.slice(0, 4).map((f: string, i: number) => (
-            <div key={i} className="flex items-center gap-1.5 text-xs text-muted-foreground">
-              <CheckCircle className="w-3 h-3 text-primary shrink-0" />
-              <span className="truncate">{f}</span>
+      {/* Frame wrapper to pad image nicely inside card */}
+      <div className="p-4 flex flex-col flex-1">
+        {/* Image Frame */}
+        <div className="relative h-48 overflow-hidden rounded-2xl shrink-0 bg-gradient-to-br from-primary/5 to-primary/10 mb-5 shadow-sm group-hover:shadow-md transition-shadow">
+          {img ? (
+            <>
+              <img src={img} alt={service.title} loading="eager"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 will-change-transform transform-gpu" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+            </>
+          ) : (
+            <div className="w-full h-full flex items-center justify-center">
+              <Icon className="w-16 h-16 text-primary/20" />
             </div>
-          ))}
+          )}
+          
+          {/* Tag badge on top of image */}
+          <div className="absolute top-3.5 left-3.5">
+            <span className="bg-primary/90 backdrop-blur-md text-white text-[9px] font-extrabold uppercase tracking-widest px-3 py-1.5 rounded-full shadow-md">
+              {service.tag}
+            </span>
+          </div>
+
+          {/* Number on bottom-right of image */}
+          <div className="absolute bottom-3 right-3.5">
+            <span className="text-white/30 font-black text-3xl leading-none select-none tracking-tighter">
+              {service.number}
+            </span>
+          </div>
         </div>
 
-        <div className="mt-auto flex items-center gap-2 text-sm font-black uppercase tracking-widest
-                        text-primary group-hover:text-foreground transition-colors duration-300">
-          <span>Get Free Estimate</span>
-          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300 shrink-0" />
+        {/* Content Details */}
+        <div className="flex flex-col flex-1 px-1.5">
+          <div className="flex items-center gap-3.5 mb-3.5">
+            <div className="w-10 h-10 rounded-xl bg-primary/5 border border-primary/15 flex items-center justify-center
+                            group-hover:bg-primary group-hover:border-primary transition-all duration-300 shrink-0">
+              <Icon className="w-5 h-5 text-primary group-hover:text-white transition-colors duration-300" />
+            </div>
+            <h3 className="text-lg font-bold text-gray-900 group-hover:text-primary
+                           transition-colors duration-300 leading-snug font-heading">
+              {service.title}
+            </h3>
+          </div>
+
+          <p className="text-gray-500 text-sm leading-relaxed mb-5 line-clamp-2">
+            {service.description}
+          </p>
+
+          {/* Features as clean list pills */}
+          <div className="flex flex-wrap gap-2 mb-6 flex-1 items-start content-start">
+            {service.features?.slice(0, 3).map((f: string, i: number) => (
+              <span 
+                key={i} 
+                className="inline-flex items-center gap-1.5 bg-white border border-gray-150 text-gray-600 text-[11px] font-semibold px-2.5 py-1.5 rounded-xl transition-all duration-300 group-hover:bg-white group-hover:border-gray-300 group-hover:text-gray-800"
+              >
+                <CheckCircle className="w-3.5 h-3.5 text-primary shrink-0" />
+                <span className="truncate max-w-[120px]">{f}</span>
+              </span>
+            ))}
+          </div>
+
+          {/* Link CTA Footer */}
+          <div className="mt-auto pt-4.5 border-t border-gray-100 flex items-center justify-between text-xs font-bold uppercase tracking-wider text-primary group-hover:text-gray-900 transition-colors duration-300">
+            <span>Get Free Estimate</span>
+            <div className="w-8 h-8 rounded-full bg-primary/10 border border-primary/15 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all duration-300">
+              <ArrowRight className="w-4 h-4 text-primary group-hover:text-white transition-transform duration-300 group-hover:translate-x-0.5 shrink-0" />
+            </div>
+          </div>
         </div>
       </div>
     </motion.a>

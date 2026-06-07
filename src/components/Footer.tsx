@@ -868,35 +868,16 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none">
-        <svg
-          viewBox="0 0 1440 120"
-          className="relative block w-full h-20 md:h-24"
-          preserveAspectRatio="none"
-        >
-          <path
-            fill="url(#footerWave)"
-            d="M0,64L60,69.3C120,75,240,85,360,80C480,75,600,53,720,48C840,43,960,53,1080,58.7C1200,64,1320,64,1380,64L1440,64L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"
-          />
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none" style={{zIndex: 1}}>
+        <svg viewBox="0 0 1440 56" className="relative block w-full" style={{height: '40px'}} preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id="footerWave" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop
-                offset="0%"
-                stopColor="hsl(var(--primary))"
-                stopOpacity="0.03"
-              />
-              <stop
-                offset="50%"
-                stopColor="hsl(var(--primary))"
-                stopOpacity="0.05"
-              />
-              <stop
-                offset="100%"
-                stopColor="hsl(var(--primary))"
-                stopOpacity="0.03"
-              />
+            <linearGradient id="footerDivGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.6"/>
+              <stop offset="50%" stopColor="hsl(var(--primary))" stopOpacity="0.3"/>
+              <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0.6"/>
             </linearGradient>
           </defs>
+          <polygon points="0,56 1440,20 1440,56" fill="url(#footerDivGrad)"/>
         </svg>
       </div>
     </footer>

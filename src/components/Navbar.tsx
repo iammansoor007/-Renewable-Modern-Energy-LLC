@@ -22,22 +22,22 @@ import {
   ClipboardCheck,
   Clock,
 } from "lucide-react";
-import logo from "../assets/therenovlogo.png";
-import logo2nd from "../assets/therenovlogo.png";
+import logo from "../assets/rmelogo.png";
+import logo2nd from "../assets/rmelogo.png";
 import completeData from "../src/data/completeData.json";
 
 const iconMap = {
-  Home: () => <Home className="h-5 w-5 text-white" />,
-  Briefcase: () => <Briefcase className="h-5 w-5 text-white" />,
-  Users: () => <Users className="h-5 w-5 text-white" />,
-  MessageSquare: () => <MessageSquare className="h-5 w-5 text-white" />,
-  Phone: () => <Phone className="h-5 w-5 text-white" />,
-  ClipboardCheck: () => <ClipboardCheck className="h-5 w-5 text-white" />,
-  Star: () => <Star className="h-5 w-5 text-white" />,
-  Clock: () => <Clock className="h-5 w-5 text-white" />,
-  Shield: () => <Shield className="h-5 w-5 text-white" />,
-  Image: () => <Briefcase className="h-5 w-5 text-white" />,
-  FileText: () => <FileText className="h-5 w-5 text-white" />,
+  Home: () => <Home className="h-5 w-5 text-current" />,
+  Briefcase: () => <Briefcase className="h-5 w-5 text-current" />,
+  Users: () => <Users className="h-5 w-5 text-current" />,
+  MessageSquare: () => <MessageSquare className="h-5 w-5 text-current" />,
+  Phone: () => <Phone className="h-5 w-5 text-current" />,
+  ClipboardCheck: () => <ClipboardCheck className="h-5 w-5 text-current" />,
+  Star: () => <Star className="h-5 w-5 text-current" />,
+  Clock: () => <Clock className="h-5 w-5 text-current" />,
+  Shield: () => <Shield className="h-5 w-5 text-current" />,
+  Image: () => <Briefcase className="h-5 w-5 text-current" />,
+  FileText: () => <FileText className="h-5 w-5 text-current" />,
 };
 const serviceIconMap = {
   Home: ({ isHovered = false }: { isHovered?: boolean }) => (
@@ -179,8 +179,8 @@ const Navbar = () => {
     <>
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled
-          ? "bg-secondary/60 backdrop-blur-xl shadow-lg py-2 border-b border-border"
-          : "bg-transparent py-2"
+          ? "bg-black/80 backdrop-blur-xl shadow-lg py-2 border-b border-white/10"
+          : "bg-transparent py-4"
           }`}
       >
         <div className="container mx-auto px-4 lg:px-8">
@@ -189,14 +189,15 @@ const Navbar = () => {
               href="#"
               className="flex logooo items-center space-x-3 group"
               onClick={handleLinkClick}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
             >
-              <div className="h-16 w-32 sm:h-16 sm:w-40 lg:h-20 lg:w-48 rounded-2xl flex items-center justify-center overflow-hidden">
+              <div className="h-16 w-32 sm:h-16 sm:w-40 lg:h-20 lg:w-48 flex items-center justify-center overflow-hidden">
                 <img
                   src={logo}
                   alt="Renewable Modern Energy LLC Logo"
                   className="h-full w-full object-contain p-1"
+                  style={{ filter: "brightness(0) invert(1)" }}
                 />
               </div>
             </motion.a>
@@ -207,13 +208,13 @@ const Navbar = () => {
                   ref={servicesButtonRef}
                   onMouseEnter={handleServicesMouseEnter}
                   onMouseLeave={handleServicesMouseLeave}
-                  className="flex items-center space-x-2 px-5 py-2.5 text-white hover:text-white transition-all duration-300 font-semibold rounded-xl relative group"
+                  className="flex items-center space-x-2 px-5 py-2.5 text-white hover:text-primary transition-all duration-300 font-semibold rounded-xl relative group"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <span className="flex items-center space-x-2">
-                    <Wrench className="h-4 w-4 text-white group-hover:text-white transition-colors" />
-                    <span className="text-white group-hover:text-white transition-colors">
+                    <Wrench className="h-4 w-4 text-white group-hover:text-primary transition-colors" />
+                    <span className="text-white group-hover:text-primary transition-colors">
                       Services
                     </span>
                   </span>
@@ -223,9 +224,9 @@ const Navbar = () => {
                     }}
                     transition={{ duration: 0.3 }}
                   >
-                    <ChevronDown className="h-4 w-4 ml-1 text-white group-hover:text-white transition-colors" />
+                    <ChevronDown className="h-4 w-4 ml-1 text-white group-hover:text-primary transition-colors" />
                   </motion.span>
-                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-black group-hover:w-4/5 transition-all duration-500" />
+                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-4/5 transition-all duration-500" />
                 </motion.button>
 
                 <AnimatePresence>
@@ -353,17 +354,17 @@ const Navbar = () => {
                         handleLinkClick();
                       }}
                       onMouseEnter={() => setActiveMegaMenu(null)}
-                      className="flex items-center space-x-2 px-4 py-2.5 text-white hover:text-white transition-all duration-300 font-semibold rounded-xl relative group"
+                      className="flex items-center space-x-2 px-4 py-2.5 text-white hover:text-primary transition-all duration-300 font-semibold rounded-xl relative group"
                       whileHover={{ scale: 1.05, y: -2 }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      <div className="text-white group-hover:text-white transition-colors">
+                      <div className="text-white group-hover:text-primary transition-colors">
                         <LinkIcon />
                       </div>
-                      <span className="text-white group-hover:text-white transition-colors">
+                      <span className="text-white group-hover:text-primary transition-colors">
                         {link.label}
                       </span>
-                      <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-black group-hover:w-3/4 transition-all duration-500" />
+                      <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-3/4 transition-all duration-500" />
                     </motion.a>
                   );
                 })}

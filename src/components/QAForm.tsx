@@ -1293,35 +1293,18 @@ ${formData.message}
         </motion.div>
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none">
-        <svg
-          viewBox="0 0 1440 100"
-          className="relative block w-full h-16 sm:h-20 md:h-24"
-          preserveAspectRatio="none"
-        >
-          <path
-            fill="url(#quantumWave)"
-            d="M0,48L60,52.3C120,57,240,65,360,65.3C480,66,600,58,720,52C840,46,960,42,1080,46C1200,50,1320,58,1380,62L1440,66L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"
-          />
+      {/* Bold section divider */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none" style={{zIndex: 11}}>
+        <svg viewBox="0 0 1440 56" className="relative block w-full" style={{height: '56px'}} preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id="quantumWave" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop
-                offset="0%"
-                stopColor="hsl(var(--primary))"
-                stopOpacity="0.05"
-              />
-              <stop
-                offset="50%"
-                stopColor="hsl(var(--primary))"
-                stopOpacity="0.08"
-              />
-              <stop
-                offset="100%"
-                stopColor="hsl(var(--primary))"
-                stopOpacity="0.05"
-              />
+            <linearGradient id="divGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="1"/>
+              <stop offset="50%" stopColor="hsl(var(--primary))" stopOpacity="0.8"/>
+              <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="1"/>
             </linearGradient>
           </defs>
+          <polygon points="0,56 1440,20 1440,56" fill="url(#divGrad3)"/>
+          <line x1="0" y1="56" x2="1440" y2="20" stroke="hsl(var(--primary))" strokeWidth="2" strokeOpacity="0.35"/>
         </svg>
       </div>
 

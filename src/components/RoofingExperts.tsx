@@ -416,40 +416,22 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-1 pointer-events-none">
-        <svg
-          viewBox="0 0 1440 60"
-          className="relative block w-full h-10 md:h-12"
-          preserveAspectRatio="none"
-        >
-          <path
-            fill="url(#redGradient)"
-            d="M0,24L60,26.7C120,29,240,34,360,34C480,34,600,29,720,26.7C840,24,960,24,1080,26.7C1200,29,1320,34,1380,36.7L1440,39L1440,60L1380,60C1320,60,1200,60,1080,60C960,60,840,60,720,60C600,60,480,60,360,60C240,60,120,60,60,60L0,60Z"
-          />
+      {/* Bold section divider */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none" style={{zIndex: 11}}>
+        <svg viewBox="0 0 1440 56" className="relative block w-full" style={{height: '56px'}} preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop
-                offset="0%"
-                stopColor="hsl(var(--primary))"
-                stopOpacity="0.04"
-              />
-              <stop
-                offset="50%"
-                stopColor="hsl(var(--primary))"
-                stopOpacity="0.06"
-              />
-              <stop
-                offset="100%"
-                stopColor="hsl(var(--primary))"
-                stopOpacity="0.04"
-              />
+            <linearGradient id="divGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="1"/>
+              <stop offset="50%" stopColor="hsl(var(--primary))" stopOpacity="0.85"/>
+              <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="1"/>
             </linearGradient>
           </defs>
+          {/* Main angled shape */}
+          <polygon points="0,56 1440,20 1440,56" fill="url(#divGrad1)"/>
+          {/* Thin accent line */}
+          <line x1="0" y1="56" x2="1440" y2="20" stroke="hsl(var(--primary))" strokeWidth="2" strokeOpacity="0.4"/>
         </svg>
       </div>
-
-      {/* Integrated Elegant Transition Fade to Services */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-background to-transparent pointer-events-none z-10" />
     </section>
   );
 }

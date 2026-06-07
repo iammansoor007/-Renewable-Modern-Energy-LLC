@@ -45,69 +45,64 @@ const MasonryCard = forwardRef<HTMLDivElement, { project: any; index: number }>(
       onMouseLeave={() => setIsHovered(false)}
       className="group relative mb-8 break-inside-avoid"
     >
-      <div className={`relative overflow-hidden bg-card ${isTall ? "aspect-[3/4]" : "aspect-square"}`}>
-        {/* Project Image */}
-        <motion.img
-          src={projectImages[project.image as keyof typeof projectImages] || projectImages.portfolio1}
-          alt={project.title}
-          loading="lazy"
-          className="w-full h-full object-cover transition-transform duration-700"
-          animate={{ scale: isHovered ? 1.08 : 1 }}
-        />
+      <div className="border border-gray-150 rounded-3xl overflow-hidden bg-gradient-to-b from-white to-gray-50/40 p-4 shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:shadow-[0_20px_50px_rgba(185,28,28,0.08)] hover:-translate-y-2 transition-all duration-500 cursor-pointer transform-gpu will-change-transform">
+        {/* Project Image Frame */}
+        <div className={`relative overflow-hidden rounded-2xl mb-4 bg-gradient-to-br from-primary/5 to-primary/10 shadow-sm ${isTall ? "aspect-[3/4]" : "aspect-square"}`}>
+          <motion.img
+            src={projectImages[project.image as keyof typeof projectImages] || projectImages.portfolio1}
+            alt={project.title}
+            loading="lazy"
+            className="w-full h-full object-cover transition-transform duration-700"
+            animate={{ scale: isHovered ? 1.05 : 1 }}
+          />
 
-        {/* Artistic Brush Stroke Mask Overlay on Hover */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: isHovered ? 1 : 0 }}
-          className="absolute inset-0 bg-primary/20 backdrop-blur-[2px] flex items-center justify-center p-8 pointer-events-none"
-        >
+          {/* Clean Overlay on Hover */}
           <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: isHovered ? 1 : 0.8, opacity: isHovered ? 1 : 0 }}
-            className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary shadow-2xl"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isHovered ? 1 : 0 }}
+            className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-black/25 backdrop-blur-[2px] flex items-center justify-center p-8 pointer-events-none transition-all duration-300"
           >
-            <ExternalLink className="w-6 h-6" />
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: isHovered ? 1 : 0.9, opacity: isHovered ? 1 : 0 }}
+              className="w-12 h-12 bg-white text-primary rounded-xl flex items-center justify-center shadow-lg transition-transform"
+            >
+              <ExternalLink className="w-5 h-5" />
+            </motion.div>
           </motion.div>
-
-          {/* Decorative Brush Stroke SVGs */}
-          <div className="absolute top-0 left-0 w-full opacity-40 rotate-180">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" className="w-full h-20 fill-primary">
-              <path d="M0,0 C150,100 350,0 500,100 L500,00 L0,0 Z"></path>
-            </svg>
-          </div>
-          <div className="absolute bottom-0 left-0 w-full opacity-40">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" className="w-full h-20 fill-primary">
-              <path d="M0,0 C150,100 350,0 500,100 L500,00 L0,0 Z"></path>
-            </svg>
-          </div>
-        </motion.div>
-      </div>
-
-      {/* Content Area - Properly positioned below the image */}
-      <div className="p-5 md:p-8 border-x border-b border-border bg-card">
-        <div className="flex flex-wrap items-center gap-2 md:gap-3 text-primary font-bold text-[9px] md:text-[10px] uppercase tracking-[0.2em] mb-3">
-          <MapPin className="w-3 h-3" />
-          {project.location}
-          <span className="text-muted-foreground/30 px-1 md:px-2">/</span>
-          {project.year}
         </div>
 
-        <h3 className="text-xl md:text-2xl font-black text-foreground uppercase italic tracking-tighter leading-none mb-3 md:mb-4 group-hover:text-primary transition-colors">
-          {project.title}
-        </h3>
-
-        <p className="text-muted-foreground text-[12px] md:text-sm leading-relaxed line-clamp-2 mb-4 md:mb-6">
-          {project.desc}
-        </p>
-
-        <div className="flex items-center justify-between pt-4 md:pt-6 border-t border-border">
-          <div className="flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-primary" />
-            <span className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-foreground/70">
-              {project.scope}
+        {/* Content Area */}
+        <div className="px-1.5 pb-1">
+          <div className="flex flex-wrap items-center gap-2 text-primary font-bold text-[10px] uppercase tracking-wider mb-2.5">
+            <span className="inline-flex items-center gap-1.5 bg-primary/5 px-2.5 py-1.5 rounded-xl border border-primary/10">
+              <MapPin className="w-3.5 h-3.5" />
+              {project.location}
+            </span>
+            <span className="inline-flex items-center gap-1 bg-gray-100 text-gray-600 px-2.5 py-1.5 rounded-xl border border-gray-150">
+              {project.year}
             </span>
           </div>
-          <ArrowRight className="w-4 h-4 md:w-5 md:h-5 text-primary transform group-hover:translate-x-2 transition-transform" />
+
+          <h3 className="text-lg md:text-xl font-bold text-gray-900 leading-snug font-heading mb-2.5 group-hover:text-primary transition-colors">
+            {project.title}
+          </h3>
+
+          <p className="text-gray-500 text-xs md:text-sm leading-relaxed line-clamp-2 mb-4 md:mb-5">
+            {project.desc}
+          </p>
+
+          <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />
+              <span className="text-[10px] font-bold uppercase tracking-wider text-gray-600">
+                {project.scope}
+              </span>
+            </div>
+            <div className="w-8 h-8 rounded-full bg-primary/10 border border-primary/15 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all duration-300">
+              <ArrowRight className="w-4 h-4 text-primary group-hover:text-white transition-transform group-hover:translate-x-0.5 shrink-0" />
+            </div>
+          </div>
         </div>
       </div>
     </motion.div>
