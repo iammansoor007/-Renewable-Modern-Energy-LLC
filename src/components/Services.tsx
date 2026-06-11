@@ -6,28 +6,20 @@ import {
   Layout, Building, CheckCircle, Phone, Zap,
 } from "lucide-react";
 import completeData from "../src/data/completeData.json";
-import imgResidential from "@/assets/residental.jpg";
-import imgCommercial from "@/assets/commericail.jpg";
-import imgNewConstruction from "@/assets/newconstuction.jpg";
-import imgRoofing from "@/assets/roofing.jpg";
-import imgJanitorial from "@/assets/janotorial.jpg";
-import imgDemo from "@/assets/demo.png";
-import imgFraming from "@/assets/framing.png";
-import imgDrywall from "@/assets/drywall.png";
-import imgPainting from "@/assets/painting.png";
-import imgFlooring from "@/assets/flooring.png";
+import imgEstimate from "@/assets/estimate.jpg";
+import imgDetach from "@/assets/detach.jpg";
+import imgReinstall from "@/assets/reintall.jpg";
+import imgTroubleshooting from "@/assets/troubleshooting.jpg";
+import imgPartnership from "@/assets/partnership.jpg";
+import imgSolarServices from "@/assets/solarservices.jpg";
 
 const serviceImageMap: Record<string, string> = {
-  "01": imgResidential,
-  "02": imgCommercial,
-  "03": imgNewConstruction,
-  "04": imgRoofing,
-  "05": imgJanitorial,
-  "06": imgDemo,
-  "07": imgFraming,
-  "08": imgDrywall,
-  "09": imgPainting,
-  "10": imgFlooring,
+  "01": imgEstimate,
+  "02": imgDetach,
+  "03": imgReinstall,
+  "04": imgTroubleshooting,
+  "05": imgPartnership,
+  "06": imgSolarServices,
 };
 
 const iconMap: Record<string, React.ElementType> = {
