@@ -23,7 +23,7 @@ import {
   Clock,
 } from "lucide-react";
 import logo from "../assets/rmelogo.png";
-import logo2nd from "../assets/rmelogo.png";
+import logo2nd from "../assets/rmelogo2.png";
 import completeData from "../src/data/completeData.json";
 
 const iconMap = {
