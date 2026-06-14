@@ -551,11 +551,14 @@ const Hero = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen overflow-hidden bg-black isolate flex items-center"
+      className="relative min-h-screen overflow-hidden bg-black isolate flex items-center pt-28 pb-16 lg:py-24"
     >
       {/* Dynamic glow blobs in the background */}
       <div className="absolute top-1/4 left-1/12 w-[350px] h-[350px] bg-primary/25 rounded-full blur-[130px] pointer-events-none -z-10 animate-pulse" style={{ animationDuration: '8s' }} />
       <div className="absolute bottom-1/4 right-1/12 w-[400px] h-[400px] bg-secondary/40 rounded-full blur-[150px] pointer-events-none -z-10 animate-pulse" style={{ animationDuration: '12s' }} />
+
+      {/* Grid Overlay for high-tech look */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none -z-10" />
 
       <div className="absolute inset-0 -z-20">
         <motion.img
@@ -569,16 +572,16 @@ const Hero = () => {
           className="w-full h-full object-cover absolute inset-0 opacity-95 will-change-transform"
         />
         {/* Softened Dark Overlays to brighten the hero section */}
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/40" />
 
         {/* Softened Directional Gradients */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent" />
       </div>
 
-      <div className="relative z-10 min-h-screen flex items-center pt-28 pb-16 lg:py-24 w-full">
+      <div className="relative z-10 w-full">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             <div className="lg:col-span-7 flex flex-col items-center lg:items-start gap-4 text-center lg:text-left">
               <motion.div
                 className="mt-2 inline-flex items-center gap-2.5 bg-white/10 backdrop-blur-md rounded-full px-4 py-1.5 mx-auto lg:mx-0 border border-white/15 shadow-[0_4px_12px_rgba(0,0,0,0.2)]"
@@ -596,16 +599,20 @@ const Hero = () => {
               </motion.div>
 
               <motion.h1
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white lg:leading-[1.15] tracking-tight font-heading w-full max-w-none text-center lg:text-left drop-shadow-[0_4px_12px_rgba(0,0,0,0.55)]"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.15] sm:leading-[1.1] tracking-tight font-heading w-full max-w-4xl text-center lg:text-left text-balance drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
               >
-                Harness the Power of <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-red-500 to-rose-600 font-extrabold relative">Solar</span>. Expert Installations Await You.
+                Harness the Power of{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-crimson-light to-crimson font-black">
+                  Solar
+                </span>
+                .<br className="hidden sm:inline" /> Expert Installations Await You.
               </motion.h1>
 
               <motion.p
-                className="text-base sm:text-lg text-gray-200 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal text-center lg:text-left mt-2 drop-shadow-[0_2px_6px_rgba(0,0,0,0.45)]"
+                className="text-sm sm:text-base md:text-lg text-gray-300 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal text-center lg:text-left mt-2 drop-shadow-[0_2px_6px_rgba(0,0,0,0.45)]"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
@@ -647,44 +654,13 @@ const Hero = () => {
                   })}
                 </div>
               </motion.div>
-
-              <motion.div
-                className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 pt-6 border-t border-white/10 w-full mt-6"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-              >
-                {stats.map((stat, idx) => {
-                  const StatIcon =
-                    iconComponents[stat.icon as keyof typeof iconComponents];
-                  return (
-                    <div
-                      key={stat.label}
-                      className="flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-3 px-4.5 transition-all duration-300 hover:bg-white/10 hover:border-primary/30 group"
-                    >
-                      <div className="w-9 h-9 rounded-xl bg-primary/20 border border-primary/30 flex-shrink-0 flex items-center justify-center transition-all duration-300 group-hover:bg-primary/30 group-hover:scale-105">
-                        {StatIcon ? (
-                          <StatIcon className="w-4.5 h-4.5 text-primary" />
-                        ) : (
-                          <div className="w-2 h-2 rounded-full bg-primary" />
-                        )}
-                      </div>
-                      <div className="text-left">
-                        <div className="text-base sm:text-lg font-extrabold text-white leading-none mb-1">
-                          {stat.value}
-                        </div>
-                        <div className="text-[9px] tracking-wider uppercase font-bold text-gray-400">
-                          {stat.label}
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </motion.div>
             </div>
 
             <div className="lg:col-span-5 relative">
-              <RoofingInquiryForm />
+              <div className="absolute -inset-1.5 bg-gradient-to-r from-primary to-rose-600 rounded-[2rem] blur-xl opacity-25" />
+              <div className="relative">
+                <RoofingInquiryForm />
+              </div>
             </div>
           </div>
         </div>
